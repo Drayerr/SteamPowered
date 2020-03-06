@@ -1,25 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import styles from './styles'
+import './styles.css'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div style={styles.DadBox}>
+        <div style={styles.title}>
+          <spam style={{ color: 'grey', fontSize: 20 }}>STEAM POWERED</spam>
+        </div>
+
+        <div>
+          <input style={styles.loginBoxes} placeholder="E-mail" />
+          <input secureTextEntry style={styles.loginBoxes} placeholder="Senha" />
+          <div style={{color: 'grey'}}>
+              Ainda não tem cadastro? Cadastre-se
+          </div>
+        </div>
+
+        <div style={styles.other}>
+          <button title="Acessar" color="grey" style={{color: '#fff', backgroundColor: 'grey', padding: 5, borderStyle: 'solid', borderRadius: 5, paddingTop: 8, paddingBottom: 8}}>ACESSAR</button>
+        </div>
+  
+      </div>
   );
 }
 
